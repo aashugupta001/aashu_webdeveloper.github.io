@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        *{
+         
+            margin: 0;
+            padding: 0;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+    <h1>Registration Page </h1><hr>
+    <label for="name">Name:</label>
+    <input type="text"  id="name" name="name" placeholder="" required>
+    <label for="Surname">Surname:</label>
+    <input type="text"  id="Surname" name="surname" placeholder="" required>
+    <label for="birthday">Birthday:</label>
+    <input type="date"  id="birthday" name="birthday"  placeholder="" required>
+   <div class="gender-class" required>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+   </div>
+    <label for="phonenumber">Phone Number:</label>
+    <input type="tel"  id="phonenumber" placeholder="" required>
+    <label for="Country">Country:</label>
+    <input type="text"  id="Country" placeholder="" required>
+    <label for="State">State:</label>
+    <select id="State" name="State" required>
+        <option value="State1">Gujarat</option>
+        <option value="State2">Maharashtra</option>
+        <option value="State3">Karnataka</option>
+        <option value="State4">Tamil Nadu</option>
+        <option value="State5">Kerala</option>
+        <option value="State6">Andhra Pradesh</option>
+        <option value="State7">Nagaland</option>
+        <option value="State8">Rajasthan</option>
+        <option value="State9">Goa</option>
+        <option value="State10">Uttar Pradesh</option>
+        <option value="State11">Uttarakhand</option>
+        <option value="State12">Bihar</option>
+        <option value="State13">Telangana</option>
+        <option value="State14">Chhattisgarh</option>
+        <option value="State15">Punjab</option>
+        <option value="State16">Haryana</option>
+        <option value="State17">Himachal Pradesh</option>
+        <option value="State18">Jammu and Kashmir</option>
+        <option value="State19">Assam</option>
+        <option value="State20">Manipur</option>
+        <option value="State21">Mizoram</option>
+        <option value="State22">Meghalaya</option>
+        <option value="State23">Sikkim</option>
+        <option value="State24">Odisha</option>
+    </select>
+    <label for="email">Email:</label>
+    <input type="email"  id="email" name="email" placeholder="" required>
+    <label for="password">Password:</label>
+    <input type="password"  id="password" name="password" placeholder="" required>
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password" id="confirmpassword" name="confirmpassword" placeholder="" required><br>
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+</form>
+
+
+</body>
+</html>
